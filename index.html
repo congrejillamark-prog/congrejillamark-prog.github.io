@@ -180,14 +180,14 @@
 <footer>© 2026 Mark Jhon Congrejilla. All rights reserved.</footer>
 
 <script>
-  // reveal-on-scroll (content stays visible if JS is off)
+  
   document.documentElement.classList.add('js');
   const io = new IntersectionObserver(es => {
     es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('show'); io.unobserve(e.target); } });
   }, { threshold: .12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-  // cursor glow
+  
   const glow = document.getElementById('glow');
   window.addEventListener('pointermove', e => {
     glow.style.transform = `translate(${e.clientX - 200}px, ${e.clientY - 200}px)`;
