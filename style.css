@@ -17,7 +17,7 @@ body{
 }
 a{color:inherit;text-decoration:none}
 
-/* ---------- background ---------- */
+
 .grid-bg{
   position:fixed;inset:0;z-index:-2;
   background-image:
@@ -34,7 +34,7 @@ a{color:inherit;text-decoration:none}
   transition:transform .15s ease-out;
 }
 
-/* ---------- floating pill nav ---------- */
+
 .pill-nav{
   position:fixed;top:18px;left:50%;transform:translateX(-50%);z-index:100;
   display:flex;align-items:center;gap:26px;
@@ -51,7 +51,7 @@ a{color:inherit;text-decoration:none}
 .pill-nav .nav-cta{background:var(--grad);color:#050510;font-weight:600}
 .pill-nav .nav-cta:hover{color:#050510;background:var(--grad);filter:brightness(1.1)}
 
-/* ---------- hero ---------- */
+
 .hero{
   min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
   text-align:center;padding:120px 6% 80px;position:relative;
@@ -89,7 +89,7 @@ h1{font-size:clamp(3rem,10vw,7.5rem);line-height:1;font-weight:800;letter-spacin
 }
 @keyframes wheel{0%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(16px)}}
 
-/* ---------- shared ---------- */
+
 section{max-width:1150px;margin:auto;padding:110px 6%}
 .hero{max-width:none}
 .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:44px}
@@ -115,20 +115,20 @@ section{max-width:1150px;margin:auto;padding:110px 6%}
 .js .reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
 .js .reveal.show{opacity:1;transform:none}
 
-/* ---------- about ---------- */
+
 .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:center}
 .about-img{aspect-ratio:4/5;max-width:380px;width:100%;border-radius:30px;position:relative}
 .about-text{min-height:220px;font-size:1.05rem;color:var(--muted)}
 blockquote{margin-top:26px;padding-left:20px;border-left:3px solid var(--c);font-style:italic;color:var(--text)}
 
-/* ---------- quick facts (bento) ---------- */
+
 .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .fact{padding:26px 22px}
 .fact:hover{transform:translateY(-6px)}
 .fact small{display:block;font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--b);margin-bottom:6px}
 .fact strong{font-size:1.2rem}
 
-/* ---------- skills ---------- */
+
 .marquee{overflow:hidden;margin-bottom:34px;
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
           mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
@@ -149,7 +149,7 @@ blockquote{margin-top:26px;padding-left:20px;border-left:3px solid var(--c);font
 .js .reveal:not(.show) .fill{width:0}
 .fill{transition:width 1.6s cubic-bezier(.2,.8,.2,1) .3s}
 
-/* ---------- achievements ---------- */
+
 .ach-list{display:flex;flex-direction:column;gap:16px}
 .ach{display:grid;grid-template-columns:230px 1fr;align-items:center;gap:20px;padding:30px 34px}
 .ach:hover{transform:translateX(8px)}
@@ -159,7 +159,7 @@ blockquote{margin-top:26px;padding-left:20px;border-left:3px solid var(--c);font
   background:rgba(0,224,198,.12);color:var(--b);
 }
 
-/* ---------- projects ---------- */
+
 .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:26px}
 .project{overflow:hidden}
 .project:hover{transform:translateY(-8px)}
@@ -171,7 +171,7 @@ blockquote{margin-top:26px;padding-left:20px;border-left:3px solid var(--c);font
 .link{color:var(--text);font-weight:600;font-size:.92rem;transition:.25s}
 .link:hover{color:var(--b);letter-spacing:.5px}
 
-/* ---------- contact ---------- */
+
 .contact-box{text-align:center;padding:70px 6%;position:relative;overflow:hidden}
 .contact-box::before{
   content:"";position:absolute;width:420px;height:420px;border-radius:50%;
@@ -189,7 +189,7 @@ blockquote{margin-top:26px;padding-left:20px;border-left:3px solid var(--c);font
 
 footer{text-align:center;padding:34px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
 
-/* ---------- responsive ---------- */
+
 @media(max-width:900px){
   .facts{grid-template-columns:repeat(2,1fr)}
   .about-grid{grid-template-columns:1fr}
